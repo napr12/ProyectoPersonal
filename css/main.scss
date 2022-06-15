@@ -1,0 +1,22 @@
+@import "./parciales/variables";
+@import "./parciales/header";
+@import "./parciales/footer";
+@import "./parciales/picture";
+@import "./parciales/mediaPicture";
+@import "./parciales/mediaPicture";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: linear-gradient($bodyBackColor, $bodyBackColor, $headerBackColor, $headerBackColor);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: $textColor;
+    font-family: 'Roboto Flex', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

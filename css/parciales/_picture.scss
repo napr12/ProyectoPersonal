@@ -1,0 +1,69 @@
+@import "./variables";
+.main {
+    width: 100vw;
+    &__section {
+        margin: 0 1%;
+        padding: 1%;
+        &__article {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: auto;
+            &__picture {
+                width: 25vw;
+                background-color: $headerBackColor;
+                //flex-direction: column;
+                justify-content: center;
+                justify-items: center;
+                align-content: center;
+                padding: 2%;
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: auto;
+                grid-template-areas: ". img ." ". title ." ". description ." " btnOut countItem btnIn ";
+                border-radius: 5%;
+                box-shadow: 1px 1px 0 0 black;
+                &--img {
+                    margin-top: 1%;
+                    grid-area: img;
+                    width: 70%;
+                    border-radius: 5%;
+                }
+                &--h4 {
+                    grid-area: title;
+                }
+                &--p {
+                    grid-area: description;
+                    display: inline-block;
+                    font-size: 6;
+                }
+                &--btnOut {
+                    grid-area: btnOut;
+                    background-color: $danger;
+                    font-family: 'Roboto Flex', sans-serif;
+                }
+                &--btnIn {
+                    grid-area: btnIn;
+                    font-family: 'Roboto Flex', sans-serif;
+                    background-color: $succes;
+                }
+            }
+        }
+    }
+}
+
+.count {
+    grid-area: countItem;
+}
+
+.button {
+    border-style: none;
+    padding: 5%;
+    border-radius: 10%;
+    margin-bottom: 30%;
+    &:hover {
+        opacity: 80%;
+    }
+    &:active {
+        opacity: 120%;
+    }
+}

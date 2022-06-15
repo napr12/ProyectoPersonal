@@ -1,0 +1,38 @@
+@import "./variables";
+.header {
+    margin: 0 1%;
+    padding: 1%;
+    border-radius: 0 0 15% 15%;
+    background-color: $headerBackColor;
+    box-shadow: 0 1px 2px 0 black;
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        &--a {
+            text-decoration: none;
+            color: $textColor;
+            &:hover {
+                color: $activeColor;
+                transform: rotate($rotation);
+            }
+        }
+        &__ul {
+            &--li {
+                display: inline-block;
+                &:hover {
+                    transform: rotate($rotation);
+                }
+                &--a {
+                    text-decoration: none;
+                    color: $textColor;
+                    padding-right: 1px;
+                    border-right: 2px solid;
+                    border-color: $textColor;
+                    &:hover {
+                        color: $activeColor;
+                    }
+                }
+            }
+        }
+    }
+}

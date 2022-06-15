@@ -1,0 +1,12 @@
+
+@media screen and (max-width: 724px) {
+    .main__section__article{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: auto;
+        &__picture{
+            width: 40vw;
+            margin-bottom: 1vw;
+        }
+    }    
+}
